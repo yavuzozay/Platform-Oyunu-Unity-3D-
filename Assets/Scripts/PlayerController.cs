@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jump;
     [SerializeField] float verticalSpeed;
     [SerializeField] float horizontalSpeed;
-    private float groundDistance = 0.1f;
+    private float groundDistance = 0.02f;
     private float gravity = -9.81f;
     float mSpeedY = 0;
 
