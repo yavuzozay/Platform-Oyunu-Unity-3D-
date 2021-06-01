@@ -6,15 +6,18 @@ public class CoinSc : MonoBehaviour,IOdulOzellikleri
 {
     public bool etkilesim;
     public int deger;
+    Animation animation;
 
     ScoreManager sm;
 
-    private void Start()
+     void Start()
     {
+        animation = GetComponent<Animation>();
     }
-    private void Update()
+     void Update()
     {
-        
+        if (etkilesim)
+            transform.position += new Vector3(0,0.01f,0.01f);
     }
    
     public void PuanArttir()
@@ -23,6 +26,7 @@ public class CoinSc : MonoBehaviour,IOdulOzellikleri
        
        
     }
+  
 
     private void OnTriggerEnter(Collider other)
     {
@@ -30,8 +34,10 @@ public class CoinSc : MonoBehaviour,IOdulOzellikleri
         {
             etkilesim = true;
             PuanArttir();
-            Destroy(gameObject, 1f);
+            Destroy(gameObject, .3f);
 
         }
     }
+
+    
 }

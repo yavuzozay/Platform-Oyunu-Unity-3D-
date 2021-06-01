@@ -5,5 +5,6 @@ using UnityEngine;
 public interface IOdulOzellikleri
 {
     void PuanArttir();
-  
+   
+
 }

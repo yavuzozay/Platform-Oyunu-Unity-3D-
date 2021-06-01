@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 2264944198419958663}
   - component: {fileID: 4074145737468264269}
   - component: {fileID: 8369002820918193619}
+  - component: {fileID: 3587869285708023916}
   m_Layer: 0
-  m_Name: coin
+  m_Name: coin 5 point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,3 +97,22 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2124705421725058983, guid: b0a887cbfe6199a4a91457bd7684c17b, type: 3}
+--- !u!95 &3587869285708023916
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2561063324671811224}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 557552a9c4c390647989bbbf006c8830, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

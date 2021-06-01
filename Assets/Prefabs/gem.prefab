@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3159271308232364150}
   - component: {fileID: 451192237403636963}
   - component: {fileID: 9203743500112856535}
+  - component: {fileID: 9199164605820404983}
   m_Layer: 0
   m_Name: gem
   m_TagString: Untagged
@@ -111,3 +112,22 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8678823145569952518, guid: f79a1391055299e47917592c29585ed1, type: 3}
+--- !u!95 &9199164605820404983
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3519282682236875171}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86fa01cf7e9f0fb4cab40e6cd96c73b6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
