@@ -8,18 +8,21 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: water
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 18a2b53a86cc72e4285e35c74f57b4cd, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
-  stringTagMap:
-    RenderType: Opaque
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_69473edc454543c9bb66f33ed9070c60:
+        m_Texture: {fileID: 2800000, guid: 9ad0d220c08516f478d123d5b86fcd78, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -77,6 +80,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_55720390ccac40389213b8e1bf895526: 1
+    - Vector1_73479b2cdeee4060bb8fba53823d46fc: 1
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -106,6 +111,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Color_a1fae1f0d6b54b79aabe2a8151b34e6c: {r: 0.6608758, g: 0.76308525, b: 0.9811321, a: 0.078431375}
+    - Color_ad70277820f94e5da659081cf98dc4d1: {r: 0.03524382, g: 0.49685642, b: 0.8490566, a: 0.40392157}
     - _BaseColor: {r: 0.23753998, g: 0.5087351, b: 0.8018868, a: 1}
     - _Color: {r: 0.23754002, g: 0.5087351, b: 0.8018868, a: 1}
     - _EmissionColor: {r: 0.047058824, g: 0.22352941, b: 0.6039216, a: 1}

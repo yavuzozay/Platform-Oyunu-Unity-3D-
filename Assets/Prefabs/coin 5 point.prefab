@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4074145737468264269}
   - component: {fileID: 8369002820918193619}
   - component: {fileID: 3587869285708023916}
+  - component: {fileID: 2950244904694537403}
   m_Layer: 0
   m_Name: coin 5 point
   m_TagString: Untagged
@@ -116,3 +117,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2950244904694537403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2561063324671811224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80f486b81096bb641b5d93e0bbf5d891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  etkilesim: 0
+  deger: 5
+  player: {fileID: 919132149155446097, guid: 89a69e6d9843a864ca7ac697acebd227, type: 3}

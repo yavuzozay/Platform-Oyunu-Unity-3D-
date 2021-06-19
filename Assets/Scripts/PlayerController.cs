@@ -14,19 +14,26 @@ public class PlayerController : MonoBehaviour
     private float groundDistance = 0.02f;
     private float gravity = -9.81f;
     float mSpeedY = 0;
+   
 
-    void Start()
+    void Awake()
     {
         characterController = GetComponent<CharacterController>();
+        //Cursor.visible = false;
+       
+
 
     }
 
     void Update()
     {
         Move();
+  
 
     }
 
+ 
+   
     private void Move()
     {
         float x = Input.GetAxisRaw("Horizontal");

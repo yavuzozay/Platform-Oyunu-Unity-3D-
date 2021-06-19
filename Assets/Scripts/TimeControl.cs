@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TimeControl : MonoBehaviour
 {
-    [SerializeField] float sure ;
+     float sure=0 ;
     [SerializeField] Text timeText;
     private bool gameActive;
     void Start()
@@ -17,7 +17,7 @@ public class TimeControl : MonoBehaviour
     {
         if (gameActive)
         {
-            sure -= Time.deltaTime;
+            sure += Time.deltaTime;
             timeText.text = "Time :" + ((int)sure).ToString();
         }
         if (sure < 0)

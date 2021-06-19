@@ -1,28 +1,44 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class CoinSc : MonoBehaviour,IOdulOzellikleri
 {
     public bool etkilesim;
-    public int deger;
-    Animation animation;
+    [SerializeField] int deger;
+     GameObject player;
+    float konumZ;
+
 
     ScoreManager sm;
-
-     void Start()
+    private void Awake()
     {
-        animation = GetComponent<Animation>();
+        konumZ = gameObject.transform.position.z;
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+    void Start()
+    {
+        
     }
      void Update()
     {
         if (etkilesim)
-            transform.position += new Vector3(0,0.01f,0.01f);
+            transform.position += new Vector3(0,0.025f,0.045f);
+
+        float zDist = (player.transform.position.z-konumZ);
+        if (zDist > 2)
+            Destroy(gameObject);
+        Debug.Log(zDist);
     }
-   
+
+ 
+
     public void PuanArttir()
     {
-        ScoreManager.score += 5;
+        ScoreManager.score +=deger;
        
        
     }
@@ -34,7 +50,7 @@ public class CoinSc : MonoBehaviour,IOdulOzellikleri
         {
             etkilesim = true;
             PuanArttir();
-            Destroy(gameObject, .3f);
+            Destroy(gameObject,.3f);
 
         }
     }
