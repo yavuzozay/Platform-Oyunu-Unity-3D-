@@ -31,7 +31,7 @@ public class CoinSc : MonoBehaviour,IOdulOzellikleri
         float zDist = (player.transform.position.z-konumZ);
         if (zDist > 2)
             Destroy(gameObject);
-        Debug.Log(zDist);
+       
     }
 
  
