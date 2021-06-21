@@ -7,17 +7,19 @@ public class PrefabGenerator : MonoBehaviour
     public GameObject coin5pt;
     public GameObject coin10pt;
     public GameObject gem;
-     public GameObject playerObj;
+    public GameObject playerObj;
+    public GameObject engelObj;
 
 
     public GameObject sonKonum;
-   Vector3 addRandomPos;
+ 
+ 
 
 
     private void Awake()
     {
         Generate();
-        CoinGenerate();
+       
         
 
     }
@@ -27,10 +29,20 @@ public class PrefabGenerator : MonoBehaviour
     }
     public void Generate()
     {
-       
 
-        sonKonum = Instantiate(sonKonum, sonKonum.transform.position + Vector3.forward*4.7f,sonKonum.transform.rotation);
+
+        sonKonum = Instantiate(sonKonum, sonKonum.transform.position + Vector3.forward*4.7f, sonKonum.transform.rotation);
     }
+    public void EngelGenerate()
+    {
+
+        float randomZ = Random.Range(1.5f, 3f);       
+       float  randomX = Random.Range(sonKonum.transform.position.x - 2f, sonKonum.transform.position.x + 2f);
+        Vector3 playerPosZ = new Vector3(0, 0, playerObj.transform.position.z);
+        Vector3 addRandomPos = new Vector3(randomX, 0, randomZ);
+        Instantiate(engelObj, playerPosZ+ addRandomPos, engelObj.transform.rotation);
+    }
+
     public void CoinGenerate()
     {
         float randomX = Random.Range(-2f, 2f);
@@ -40,7 +52,7 @@ public class PrefabGenerator : MonoBehaviour
         randomX= Random.Range(sonKonum.transform.position.x - 2f, sonKonum.transform.position.x + 2f);
         Vector3 playerPosZ = new Vector3(0,playerObj.transform.position.y,playerObj.transform.position.z);
 
-        addRandomPos = new Vector3(randomX,randomY,randomZ);
+        Vector3 addRandomPos = new Vector3(randomX,randomY,randomZ);
         Debug.Log("random: "+rnd);
        switch(rnd%3)
         {

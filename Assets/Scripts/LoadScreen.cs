@@ -9,4 +9,8 @@ public class LoadScreen : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

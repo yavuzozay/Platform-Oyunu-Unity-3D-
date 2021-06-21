@@ -6,24 +6,29 @@ using UnityEngine.UI;
 public class TimeControl : MonoBehaviour
 {
      float sure=0 ;
+    int time;
+    int temp=0;
     [SerializeField] Text timeText;
-    private bool gameActive;
+    
     void Start()
     {
-        gameActive = true;
+       
     }
 
     void Update()
     {
-        if (gameActive)
-        {
             sure += Time.deltaTime;
-            timeText.text = "Time :" + ((int)sure).ToString();
+             time = (int)sure;
+        if(time-temp>=1)
+        {
+            ScoreManager.score ++;
+            temp = time;
+            
+
         }
-        if (sure < 0)
-            gameActive = false;
-      
-        
+
+        timeText.text = "Time :" + time.ToString();
+
         
     }
 }
