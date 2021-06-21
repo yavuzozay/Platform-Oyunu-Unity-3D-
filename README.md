@@ -4,7 +4,8 @@
 [Play](https://yavuzozay.github.io/Platform%20Oyunu/index.html)
 
 ## Genel Bilgiler
-Kodlar Assets>Scripts klasörü içindedir.
+#### Kodlar Assets>Scripts klasörü içindedir.
+#### Webgl sürümünde farklılıklar bulunuyor kodlar masaüstü sürümü için geçerlidir.
 
 ## Kullanılan Programlar
 #### - Unity  
